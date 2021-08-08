@@ -82,13 +82,13 @@ useEffect(()=> {
       <Router>
         <Header></Header>
         <Switch>
-          <Route path="/add"  
+          <Route path="/EmpContact/add"  
             render={(props) => (
               <AddContact {...props} addContactHandler={addContactHandler}/>
             )}
           />
 
-          <Route path="/" exact 
+          <Route path="/EmpContact/" exact 
             render={(props) => (
               <ContactList 
                 {...props} 
@@ -100,11 +100,11 @@ useEffect(()=> {
             )}
           />
 
-          <Route path="/contact/:id"  
+          <Route path="/EmpContact/contact/:id"  
             component={ContactDetails}
           />
 
-          <Route path="/edit/"  
+          <Route path="/EmpContact/edit/"  
             render={(props) => (
               <EditContact {...props} updateContactHandler={updateContactHandler}/>
             )}
