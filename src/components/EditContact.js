@@ -20,7 +20,7 @@ class EditContact extends React.Component{
         
         this.props.updateContactHandler(this.state);
         this.setState({name:"", email:"" });
-        this.props.history.push("/");
+        this.props.history.push("/EmpContact/");
     };
     render(){
         return(

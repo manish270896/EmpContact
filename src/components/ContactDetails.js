@@ -18,7 +18,7 @@ const  ContactDetails = (props) => {
                 </div>
             </div>
             <div className="centered center-div">
-                <Link to="/">
+                <Link to="/EmpContact/">
                     <button className="ui button blue center">Back</button>
                 </Link>
             </div>

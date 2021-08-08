@@ -10,11 +10,12 @@ const ContactList = (props) =>  {
     };
     const inputEl = useRef("");
     const getSearchTerm = () => {
-        //console.log(inputEl);
+        console.log(inputEl);
         props.searchKeyword(inputEl.current.value);
     };
 
     const a = props.contacts.map((contact) => {
+        console.log(contact);
         return(
             <ContactCard contact={contact} clickHandler={deleteContactHandler} key ={contact.id} ></ContactCard>
         );
@@ -23,7 +24,7 @@ const ContactList = (props) =>  {
         <div class="main">
             <h2>
                 Contact List
-                <Link to="/add">
+                <Link to="/EmpContact/add">
                     <button className="ui button blue right">Add Contact</button>
                 </Link>
             </h2>
